@@ -1,8 +1,0 @@
-entity FullAdder_TB is
-end FullAdder_TB;
-
-architecture behav of FullAdder_TB is
-  component FullAdder
-  port(X, Y, Cin: in bit; --señales de entrada
-      Cout, Suma: out bit); --señales de salida
-end component;
