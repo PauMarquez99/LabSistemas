@@ -21,6 +21,7 @@ signal AN02, AN12, AN22, AN32: bit;
 signal AN03, AN13, AN23, AN33: bit;
 begin
   z0 <= AN00;
+  HA1: HalfAdd port map();
   AN00 <= a0 AND b0;
   AN10 <= a1 AND b0;
   AN20 <= a2 AND b0;
