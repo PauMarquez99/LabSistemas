@@ -1,6 +1,6 @@
 entity multiplier is
   port(a0, a1, a2, a3: in bit;
-    b0, b1, b2, b3,: in bit;
+    b0, b1, b2, b3: in bit;
     z0, z1, z2, z3, z4, z5, z6, z7, z8: out bit);
 end multiplier;
 
