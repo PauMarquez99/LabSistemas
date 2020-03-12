@@ -4,7 +4,7 @@ entity multiplier is
     z0, z1, z2, z3, z4, z5, z6, z7, z8: out bit);
 end multiplier;
 
-architecture logic for multiplier is
+architecture logic of multiplier is
   component Full_Add
     port (i0, i1 : in bit; ci : in bit;
       s : out bit;
@@ -21,14 +21,14 @@ signal AN02, AN12, AN22, AN32: bit;
 signal AN03, AN13, AN23, AN33: bit;
 signal CA1, CA2, CA3, CA4, CA5, CA6: bit;
 signal CA7, CA8, CA9, CA10, CA11, CA12: bit;
-signal SUM1, SUM2, SUM3, SUM4, SUM5, SUM6;
+signal SUM1, SUM2, SUM3, SUM4, SUM5, SUM6: bit;
 
 begin
   z0 <= AN00;
   HA1: HalfAdd port map(AN01, AN11, z1, CA1);
   FA1: Full_Add port map(AN11, AN21, CA1, SUM1, CA2);
-  FA2: Full_Add port map(AND21, AN31, CA2, SUM2, CA3);
-  FA3: Full_Add port map(AND31, '1', CA3, SUM3, CA4);
+  FA2: Full_Add port map(AN21, AN31, CA2, SUM2, CA3);
+  FA3: Full_Add port map(AN31, '1', CA3, SUM3, CA4);
   HA2: HalfAdd port map(AN02, SUM1, z2, CA5);
   FA4: Full_Add port map(AN12, SUM2, CA5, SUM4, CA6);
   FA5: Full_Add port map(AN22, SUM3, CA6, SUM5, CA7);
@@ -54,3 +54,4 @@ begin
   AN13 <= a1 NAND b3;
   AN23 <= a2 NAND b3;
   AN33 <= a3 AND b3;
+end logic;
