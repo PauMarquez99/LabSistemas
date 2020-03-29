@@ -1,25 +1,34 @@
 v 4
-file . "HalfAdder.vhdl" "c99136dc7f9689cd651f337020b9207698e3151d" "20200312021017.461":
-  entity halfadd at 1( 0) + 0 on 45;
-  architecture archit of halfadd at 7( 101) + 0 on 46;
-file . "MUX4to1.vhdl" "8811e4093fb886b218d56133899b7d213203bb61" "20200312020946.864":
-  entity mux_4_1 at 1( 0) + 2 on 43;
-  architecture comport of mux_4_1 at 7( 111) + 0 on 44;
-file . "Multiplier_tb.vhdl" "17001ff11142813e3329bc3ef6cb9919b0abfac9" "20200312021113.400":
-  entity multiplier_tb at 1( 0) + 0 on 51;
-  architecture behav of multiplier_tb at 4( 47) + 0 on 52;
-file . "adder.vhdl" "84ceeef570fed4f6030a5113b0837111a0c3094d" "20200220020556.333":
-  entity adder at 1( 0) + 0 on 15;
-  architecture rtl of adder at 7( 215) + 0 on 16;
-file . "heartbeat.vhdl" "1eeb0e56b3b5ac7db07b9f1592d82fe90e595644" "20200220014652.409":
-  entity heartbeat at 1( 0) + 0 on 13;
-  architecture behaviour of heartbeat at 8( 117) + 0 on 14;
-file . "adder_tb.vhdl" "a891e67f6030a80c7ccb5cef0125d6adb6fe4f07" "20200220020600.776":
-  entity adder_tb at 2( 31) + 0 on 17;
-  architecture behav of adder_tb at 5( 68) + 0 on 18;
-file . "Multiplier.vhdl" "3c59f09818e114d4a1052b907440298acd244cbf" "20200312021101.529":
-  entity multiplier at 1( 0) + 0 on 49;
-  architecture logic of multiplier at 7( 153) + 0 on 50;
+file . "addsub.vhdl" "1a626eb7f34dabaad017b28bcf04b91b3936f2a4" "20200329060036.963":
+  entity addsub at 1( 0) + 0 on 85;
+  architecture logic of addsub at 12( 235) + 0 on 86;
+file . "FAdder.vhdl" "8f21b14535a9d473ac9a7ad25c157784688b03a0" "20200329060012.169":
+  entity fulladd at 1( 0) + 0 on 83;
+  architecture archi of fulladd at 7( 110) + 0 on 84;
+file . "JK_FF.vhdl" "c16947ac1bfda2c23d081b6c4fc0a5a2faa7514d" "20200325180149.070":
+  entity jk_ff at 1( 0) + 0 on 53;
+  architecture behav of jk_ff at 5( 75) + 0 on 54;
 file . "FullAdder.vhdl" "fce828acc2a8376d0a89c673c1d0ed58f387a56f" "20200312021038.356":
   entity full_add at 1( 0) + 0 on 47;
   architecture archi of full_add at 7( 108) + 0 on 48;
+file . "Multiplier.vhdl" "3c59f09818e114d4a1052b907440298acd244cbf" "20200312021101.529":
+  entity multiplier at 1( 0) + 0 on 49;
+  architecture logic of multiplier at 7( 153) + 0 on 50;
+file . "adder_tb.vhdl" "a891e67f6030a80c7ccb5cef0125d6adb6fe4f07" "20200220020600.776":
+  entity adder_tb at 2( 31) + 0 on 17;
+  architecture behav of adder_tb at 5( 68) + 0 on 18;
+file . "heartbeat.vhdl" "1eeb0e56b3b5ac7db07b9f1592d82fe90e595644" "20200220014652.409":
+  entity heartbeat at 1( 0) + 0 on 13;
+  architecture behaviour of heartbeat at 8( 117) + 0 on 14;
+file . "adder.vhdl" "84ceeef570fed4f6030a5113b0837111a0c3094d" "20200220020556.333":
+  entity adder at 1( 0) + 0 on 15;
+  architecture rtl of adder at 7( 215) + 0 on 16;
+file . "Multiplier_tb.vhdl" "17001ff11142813e3329bc3ef6cb9919b0abfac9" "20200312021113.400":
+  entity multiplier_tb at 1( 0) + 0 on 51;
+  architecture behav of multiplier_tb at 4( 47) + 0 on 52;
+file . "MUX4to1.vhdl" "8811e4093fb886b218d56133899b7d213203bb61" "20200329055944.906":
+  entity mux_4_1 at 1( 0) + 2 on 81;
+  architecture comport of mux_4_1 at 7( 111) + 0 on 82;
+file . "HalfAdder.vhdl" "c99136dc7f9689cd651f337020b9207698e3151d" "20200312021017.461":
+  entity halfadd at 1( 0) + 0 on 45;
+  architecture archit of halfadd at 7( 101) + 0 on 46;
