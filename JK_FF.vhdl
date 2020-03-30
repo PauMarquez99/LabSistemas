@@ -1,22 +1,16 @@
 entity JK_FF is
-  port(J, K, CLK: in bit; Q, NQ: out bit);
+  port(SN, RN, J, K, CLK: in bit; Q, NQ: out bit);
 end JK_FF;
 
 architecture behav of JK_FF is
 signal Qsignal: bit;
   begin
-    process(CLK) is
+    process(SN, RN, CLK) is
     begin
-      if(CLK = '1' and CLK'EVENT) then
-        if(J = '0' and K = '0') then
-        Qsignal <= Qsignal;
-        elsif(J = '1' and K = '1') then
-        Qsignal <= not Qsignal;
-        elsif(J = '0' and K = '1') then
-        Qsignal <= '0';
-        else
-        Qsignal <= '1';
-        end if;
+    if RN = '0' then Qsignal <= '0';
+      elsif SN = '0' then Qsignal <= '1';
+      elsif CLK'event and CLK = '0' then
+        Qsignal <= (j and not Qsignal) or (not K and Qsignal);
       end if;
     end process;
     Q <= Qsignal;

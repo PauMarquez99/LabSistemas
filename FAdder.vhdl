@@ -5,14 +5,12 @@ entity FullAdd is
 end FullAdd;
 
 architecture archi of FullAdd is
-  component mux_4_1
-    port(A, B, C, D: in bit;
-      S1,S2: in bit;
-      z: out bit);
-  end component;
-signal cinnot : bit;
+
+signal X1, A1, A2 : bit;
 begin
-  mux1: mux_4_1 port map(BC, cinnot, cinnot, BC, A, B, s);
-  mux2: mux_4_1 port map('0', BC, BC, '1', A, B, CO);
-  cinnot <= NOT BC;
+  X1 <= A xor B;
+  S <= BC xor X1;
+  A1 <= BC and A1;
+  A2 <= A and B;
+  CO <= A1 or A2;
 end archi;
