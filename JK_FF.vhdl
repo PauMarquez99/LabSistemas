@@ -10,7 +10,7 @@ signal Qsignal: bit;
     if RN = '0' then Qsignal <= '0';
       elsif SN = '0' then Qsignal <= '1';
       elsif CLK'event and CLK = '0' then
-        Qsignal <= (j and not Qsignal) or (not K and Qsignal);
+        Qsignal <= (J and not Qsignal) or (not K and Qsignal);
       end if;
     end process;
     Q <= Qsignal;
