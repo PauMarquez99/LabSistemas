@@ -22,8 +22,8 @@ architecture logic of ContSinUD is
   QAND(3) <= NQ(1) and QAND(1);
   QAND(4) <= Q(2) and QAND(2);
   QAND(5) <= NQ(2) and QAND(3);
-  QAND(6) <= (not UD) and Q(3) and QOR(0);
-  QAND(7) <= UD and NQ(0) and NQ(1) and NQ(2) and NQ(3);
+  QAND(6) <= UD and Q(3) and QOR(0);
+  QAND(7) <= (not UD) and NQ(0) and NQ(1) and NQ(2) and NQ(3);
   QAND(8) <= not(UD and Q(0) and Q(1) and Q(2) and Q(3));
   QAND(9) <= not((not UD) and NQ(0) and Q(1) and NQ(2) and Q(3));
 
