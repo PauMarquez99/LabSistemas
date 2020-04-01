@@ -3,12 +3,13 @@ end entity;
 
 architecture logic of JK_FF_tb is
   component JK_FF
-    port(SN, RN, J, K, CLK: in bit; Q, NQ: out bit);
+    port(EN, SN, RN, J, K, CLK: in bit; Q, NQ: out bit);
   end component;
-  signal SN, RN, J, K, CLK, Q, NQ: bit;
+  signal EN, SN, RN, J, K, CLK, Q, NQ: bit;
   begin
-  JK_FF1: JK_FF port map (SN, RN, J, K, CLK, Q, NQ);
+  JK_FF1: JK_FF port map (EN, SN, RN, J, K, CLK, Q, NQ);
   CLK <= not CLK after 5 ns;
+  EN <= '1';
   process
   begin
   SN <= '0';
