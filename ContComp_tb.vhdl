@@ -14,9 +14,11 @@ architecture logic of ContComp_tb is
   EN <= '1';
   process
   begin
-    UP <= '0';
+    UD <= '0';
+    EN <= '1';
     wait for 180 ns;
-    UP <= '1';
+    UD <= '1';
+    EN <= '1';
     wait for 180 ns;
   end process;
 end logic;
