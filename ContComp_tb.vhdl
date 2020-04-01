@@ -19,4 +19,4 @@ architecture logic of ContComp_tb is
     UP <= '1';
     wait for 180 ns;
   end process;
-end logic; 
+end logic;

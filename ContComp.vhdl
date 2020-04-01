@@ -7,7 +7,7 @@ architecture logic of ContComp is
     port(EN, UD, CLK: in bit; LIM: out bit; R: out bit_vector(3 downto 0));
   end component;
 
-  signal EN, UD, CLK, LIM, LIMS: bit;
+  signal LIM, LIMS: bit;
   signal R: bit_vector(3 downto 0);
 
   begin
