@@ -15,9 +15,9 @@ architecture logic of ContSinUD_tb is
     begin
     EN <= '1';
     UD <= '0';
-    wait for 90 ns;
+    wait for 140 ns;
     EN <= '1';
     UD <= '1';
-    wait for 80 ns;
+    wait for 140 ns;
     end process;
 end logic;
