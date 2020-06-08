@@ -4,9 +4,9 @@ end bdc_seven;
 
 architecture behavioral of bdc_seven is
   begin
-    process(bcd)
+    process(bdc)
     begin
-    case bcd is
+    case bdc is
       when "0000" => seven <= "0111111";
       when "0001" => seven <= "0000110";
       when "0010" => seven <= "1011011";
