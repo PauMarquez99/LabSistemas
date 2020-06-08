@@ -1,0 +1,12 @@
+entity bdc_seven_tb is
+end bdc_seven_tb;
+
+architecture behavioral of bdc_seven_tb is
+  component bdc_seven is
+    port(bdc: in bit_vector(3 downto 0); seven: out bit_vector(7 downto 1));
+  end component;
+  signal bdc: bit_vector(3 downto 0);
+  signal seven: bit_vector(7 downto 1);
+
+  begin
+  
