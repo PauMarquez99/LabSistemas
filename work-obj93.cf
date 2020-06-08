@@ -1,4 +1,7 @@
 v 4
+file . "bdc_seven_tb.vhdl" "0a4cbb46cb87d14b1c926fa35952ec89b4c2fcbb" "20200608190817.750":
+  entity bdc_seven_tb at 1( 0) + 0 on 577;
+  architecture behavioral of bdc_seven_tb at 4( 45) + 0 on 578;
 file . "lcd_controller_tb.vhdl" "6869a2115a3711336f3a2ccbc98180bb4d93abe8" "20200512062949.691":
   entity lcd_controller_tb at 1( 0) + 0 on 573;
   architecture log of lcd_controller_tb at 11( 196) + 0 on 574;
@@ -68,3 +71,6 @@ file . "ContSinUD_tb.vhdl" "bacef4c45cf45d3afa0f87ea553cde54d896d95c" "202004260
 file . "lcd_controller.vhdl" "31606f267cf97223f9a5256e3b69e3de6398200a" "20200512062607.732":
   entity lcd_controller at 1( 0) + 0 on 565;
   architecture logic of lcd_controller at 15( 354) + 0 on 566;
+file . "bdc_seven.vhdl" "28dc984ab85bb28fee44b71674874381281ee04e" "20200608190759.763":
+  entity bdc_seven at 1( 0) + 0 on 575;
+  architecture behavioral of bdc_seven at 5( 115) + 0 on 576;
