@@ -1,0 +1,23 @@
+entity bdc_seven is
+  port(bdc: in bit_vector(3 downto 0); seven: out bit_vector(7 downto 1));
+end bdc_seven;
+
+architecture behavioral of bdc_seven is
+  begin
+    process(bcd)
+    begin
+    case bcd is
+      when "0000" => seven <= "0111111";
+      when "0001" => seven <= "0111111";
+      when "0010" => seven <= "0111111";
+      when "0011" => seven <= "0111111";
+      when "0100" => seven <= "0111111";
+      when "0101" => seven <= "0111111";
+      when "0110" => seven <= "0111111";
+      when "0111" => seven <= "0111111";
+      when "1000" => seven <= "0111111";
+      when "1001" => seven <= "0111111";
+      when others => null;
+    end case;
+  end process;
+end behavioral;
