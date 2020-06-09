@@ -16,4 +16,4 @@ architecture behavioral of cont2 is
     uut1: JK_FF port map ('1', SN, RN, '1', '1', CLK, Q0, NQ(0));
     uut2: JK_FF port map ('1', SN, RN, '1', '1', CLK, Q1, NQ(1));
 
-end behavioral; 
+end behavioral;

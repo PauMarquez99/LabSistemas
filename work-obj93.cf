@@ -1,79 +1,82 @@
 v 4
-file . "displays4.vhdl" "4c584b0b599e1b2a90c5c277f5b3b19ada807b9d" "20200609021109.878":
-  entity displays4 at 1( 0) + 0 on 581;
-  architecture behavioral of displays4 at 7( 163) + 0 on 582;
-file . "bdc_seven_tb.vhdl" "0a4cbb46cb87d14b1c926fa35952ec89b4c2fcbb" "20200608190817.750":
-  entity bdc_seven_tb at 1( 0) + 0 on 577;
-  architecture behavioral of bdc_seven_tb at 4( 45) + 0 on 578;
-file . "lcd_controller_tb.vhdl" "6869a2115a3711336f3a2ccbc98180bb4d93abe8" "20200512062949.691":
-  entity lcd_controller_tb at 1( 0) + 0 on 573;
-  architecture log of lcd_controller_tb at 11( 196) + 0 on 574;
-file . "ContComp_tb.vhdl" "d7ddc0fed02af6fb03c477259f3c04465a981ca8" "20200401052057.846":
-  entity contcomp_tb at 1( 0) + 0 on 451;
-  architecture logic of contcomp_tb at 4( 38) + 0 on 452;
-file . "ContComp.vhdl" "f74ecb1122936361bff280d8695130bfdfb09519" "20200401052045.841":
-  entity contcomp at 1( 0) + 0 on 449;
-  architecture logic of contcomp at 5( 101) + 0 on 450;
-file . "ContSinD_tb.vhdl" "e8fbda57ed5fef9d8053ebf1e6be17d37c7dd7d2" "20200331232413.281":
-  entity contsind_tb at 1( 0) + 0 on 285;
-  architecture logic of contsind_tb at 4( 43) + 0 on 286;
-file . "ContSin_tb.vhdl" "f6c7ebce5af927565bcadf3b2601c890e0642af4" "20200331185841.968":
-  entity contsin_tb at 1( 0) + 0 on 247;
-  architecture logic of contsin_tb at 4( 41) + 0 on 248;
-file . "JK_FF_tb.vhdl" "dd6eeee707b604ae57fc84bcaf9dfcf40975e2e2" "20200331044142.027":
-  entity jk_ff_tb at 1( 0) + 0 on 221;
-  architecture logic of jk_ff_tb at 4( 35) + 0 on 222;
-file . "FAdder.vhdl" "227e73a88bd31a35184550ebe4a09a20ea383cd9" "20200330201534.603":
-  entity fulladd at 1( 0) + 0 on 207;
-  architecture archi of fulladd at 7( 110) + 0 on 208;
-file . "addsub.vhdl" "1a626eb7f34dabaad017b28bcf04b91b3936f2a4" "20200330201548.304":
-  entity addsub at 1( 0) + 0 on 209;
-  architecture logic of addsub at 12( 235) + 0 on 210;
-file . "JK_FF.vhdl" "f6bd9cfab701ccc772d371f0a4bdd011fa20d0f4" "20200425233308.602":
-  entity jk_ff at 1( 0) + 0 on 473;
-  architecture behav of jk_ff at 5( 87) + 0 on 474;
-file . "FullAdder.vhdl" "fce828acc2a8376d0a89c673c1d0ed58f387a56f" "20200312021038.356":
-  entity full_add at 1( 0) + 0 on 47;
-  architecture archi of full_add at 7( 108) + 0 on 48;
-file . "Multiplier.vhdl" "3c59f09818e114d4a1052b907440298acd244cbf" "20200312021101.529":
-  entity multiplier at 1( 0) + 0 on 49;
-  architecture logic of multiplier at 7( 153) + 0 on 50;
-file . "adder_tb.vhdl" "a891e67f6030a80c7ccb5cef0125d6adb6fe4f07" "20200220020600.776":
-  entity adder_tb at 2( 31) + 0 on 17;
-  architecture behav of adder_tb at 5( 68) + 0 on 18;
-file . "heartbeat.vhdl" "1eeb0e56b3b5ac7db07b9f1592d82fe90e595644" "20200220014652.409":
-  entity heartbeat at 1( 0) + 0 on 13;
-  architecture behaviour of heartbeat at 8( 117) + 0 on 14;
-file . "adder.vhdl" "84ceeef570fed4f6030a5113b0837111a0c3094d" "20200220020556.333":
-  entity adder at 1( 0) + 0 on 15;
-  architecture rtl of adder at 7( 215) + 0 on 16;
-file . "Multiplier_tb.vhdl" "17001ff11142813e3329bc3ef6cb9919b0abfac9" "20200312021113.400":
-  entity multiplier_tb at 1( 0) + 0 on 51;
-  architecture behav of multiplier_tb at 4( 47) + 0 on 52;
-file . "MUX4to1.vhdl" "8811e4093fb886b218d56133899b7d213203bb61" "20200329193951.065":
-  entity mux_4_1 at 1( 0) + 2 on 131;
-  architecture comport of mux_4_1 at 7( 111) + 0 on 132;
-file . "HalfAdder.vhdl" "c99136dc7f9689cd651f337020b9207698e3151d" "20200312021017.461":
-  entity halfadd at 1( 0) + 0 on 45;
-  architecture archit of halfadd at 7( 101) + 0 on 46;
-file . "addsub_tb.vhdl" "9b5a26a9f301cebc75ca8462a529896a37e33392" "20200330201559.947":
-  entity addsub_tb at 1( 0) + 0 on 211;
-  architecture try of addsub_tb at 4( 39) + 0 on 212;
-file . "ContSin.vhdl" "977de1eac56ed8a5aca33473cec6ed142d6808a9" "20200331185833.710":
-  entity contsin at 1( 0) + 0 on 245;
-  architecture structure of contsin at 5( 88) + 0 on 246;
-file . "ContSinD.vhdl" "1fe60f971606977c20b0ce6a84c75034e685f0a2" "20200420231636.444":
-  entity contsind at 1( 0) + 0 on 455;
-  architecture logic of contsind at 5( 90) + 0 on 456;
-file . "ContSinUD.vhdl" "1b125fca4a8a0af9c430b49e5bc8a3f2b2407e12" "20200426000210.877":
-  entity contsinud at 1( 0) + 0 on 483;
-  architecture logic of contsinud at 5( 114) + 0 on 484;
-file . "ContSinUD_tb.vhdl" "bacef4c45cf45d3afa0f87ea553cde54d896d95c" "20200426000217.495":
-  entity contsinud_tb at 1( 0) + 0 on 485;
-  architecture logic of contsinud_tb at 4( 45) + 0 on 486;
+file . "cont2.vhdl" "ff72e4d4f434bd06cdb1f9710539085fd630281b" "20200609022034.811":
+  entity cont2 at 1( 0) + 0 on 587;
+  architecture behavioral of cont2 at 5( 96) + 0 on 588;
+file . "bdc_seven.vhdl" "6e2e5974aca1cff6236b6d7b09efebdfa2946f70" "20200609021941.023":
+  entity bdc_seven at 1( 0) + 0 on 583;
+  architecture behavioral of bdc_seven at 6( 152) + 0 on 584;
 file . "lcd_controller.vhdl" "31606f267cf97223f9a5256e3b69e3de6398200a" "20200512062607.732":
   entity lcd_controller at 1( 0) + 0 on 565;
   architecture logic of lcd_controller at 15( 354) + 0 on 566;
-file . "bdc_seven.vhdl" "6e2e5974aca1cff6236b6d7b09efebdfa2946f70" "20200609020932.238":
-  entity bdc_seven at 1( 0) + 0 on 579;
-  architecture behavioral of bdc_seven at 6( 152) + 0 on 580;
+file . "ContSinUD_tb.vhdl" "bacef4c45cf45d3afa0f87ea553cde54d896d95c" "20200426000217.495":
+  entity contsinud_tb at 1( 0) + 0 on 485;
+  architecture logic of contsinud_tb at 4( 45) + 0 on 486;
+file . "ContSinUD.vhdl" "1b125fca4a8a0af9c430b49e5bc8a3f2b2407e12" "20200426000210.877":
+  entity contsinud at 1( 0) + 0 on 483;
+  architecture logic of contsinud at 5( 114) + 0 on 484;
+file . "ContSinD.vhdl" "1fe60f971606977c20b0ce6a84c75034e685f0a2" "20200420231636.444":
+  entity contsind at 1( 0) + 0 on 455;
+  architecture logic of contsind at 5( 90) + 0 on 456;
+file . "ContSin.vhdl" "977de1eac56ed8a5aca33473cec6ed142d6808a9" "20200331185833.710":
+  entity contsin at 1( 0) + 0 on 245;
+  architecture structure of contsin at 5( 88) + 0 on 246;
+file . "addsub_tb.vhdl" "9b5a26a9f301cebc75ca8462a529896a37e33392" "20200330201559.947":
+  entity addsub_tb at 1( 0) + 0 on 211;
+  architecture try of addsub_tb at 4( 39) + 0 on 212;
+file . "HalfAdder.vhdl" "c99136dc7f9689cd651f337020b9207698e3151d" "20200312021017.461":
+  entity halfadd at 1( 0) + 0 on 45;
+  architecture archit of halfadd at 7( 101) + 0 on 46;
+file . "MUX4to1.vhdl" "8811e4093fb886b218d56133899b7d213203bb61" "20200329193951.065":
+  entity mux_4_1 at 1( 0) + 2 on 131;
+  architecture comport of mux_4_1 at 7( 111) + 0 on 132;
+file . "Multiplier_tb.vhdl" "17001ff11142813e3329bc3ef6cb9919b0abfac9" "20200312021113.400":
+  entity multiplier_tb at 1( 0) + 0 on 51;
+  architecture behav of multiplier_tb at 4( 47) + 0 on 52;
+file . "adder.vhdl" "84ceeef570fed4f6030a5113b0837111a0c3094d" "20200220020556.333":
+  entity adder at 1( 0) + 0 on 15;
+  architecture rtl of adder at 7( 215) + 0 on 16;
+file . "heartbeat.vhdl" "1eeb0e56b3b5ac7db07b9f1592d82fe90e595644" "20200220014652.409":
+  entity heartbeat at 1( 0) + 0 on 13;
+  architecture behaviour of heartbeat at 8( 117) + 0 on 14;
+file . "adder_tb.vhdl" "a891e67f6030a80c7ccb5cef0125d6adb6fe4f07" "20200220020600.776":
+  entity adder_tb at 2( 31) + 0 on 17;
+  architecture behav of adder_tb at 5( 68) + 0 on 18;
+file . "Multiplier.vhdl" "3c59f09818e114d4a1052b907440298acd244cbf" "20200312021101.529":
+  entity multiplier at 1( 0) + 0 on 49;
+  architecture logic of multiplier at 7( 153) + 0 on 50;
+file . "FullAdder.vhdl" "fce828acc2a8376d0a89c673c1d0ed58f387a56f" "20200312021038.356":
+  entity full_add at 1( 0) + 0 on 47;
+  architecture archi of full_add at 7( 108) + 0 on 48;
+file . "JK_FF.vhdl" "f6bd9cfab701ccc772d371f0a4bdd011fa20d0f4" "20200609022009.107":
+  entity jk_ff at 1( 0) + 0 on 585;
+  architecture behav of jk_ff at 5( 87) + 0 on 586;
+file . "addsub.vhdl" "1a626eb7f34dabaad017b28bcf04b91b3936f2a4" "20200330201548.304":
+  entity addsub at 1( 0) + 0 on 209;
+  architecture logic of addsub at 12( 235) + 0 on 210;
+file . "FAdder.vhdl" "227e73a88bd31a35184550ebe4a09a20ea383cd9" "20200330201534.603":
+  entity fulladd at 1( 0) + 0 on 207;
+  architecture archi of fulladd at 7( 110) + 0 on 208;
+file . "JK_FF_tb.vhdl" "dd6eeee707b604ae57fc84bcaf9dfcf40975e2e2" "20200331044142.027":
+  entity jk_ff_tb at 1( 0) + 0 on 221;
+  architecture logic of jk_ff_tb at 4( 35) + 0 on 222;
+file . "ContSin_tb.vhdl" "f6c7ebce5af927565bcadf3b2601c890e0642af4" "20200331185841.968":
+  entity contsin_tb at 1( 0) + 0 on 247;
+  architecture logic of contsin_tb at 4( 41) + 0 on 248;
+file . "ContSinD_tb.vhdl" "e8fbda57ed5fef9d8053ebf1e6be17d37c7dd7d2" "20200331232413.281":
+  entity contsind_tb at 1( 0) + 0 on 285;
+  architecture logic of contsind_tb at 4( 43) + 0 on 286;
+file . "ContComp.vhdl" "f74ecb1122936361bff280d8695130bfdfb09519" "20200401052045.841":
+  entity contcomp at 1( 0) + 0 on 449;
+  architecture logic of contcomp at 5( 101) + 0 on 450;
+file . "ContComp_tb.vhdl" "d7ddc0fed02af6fb03c477259f3c04465a981ca8" "20200401052057.846":
+  entity contcomp_tb at 1( 0) + 0 on 451;
+  architecture logic of contcomp_tb at 4( 38) + 0 on 452;
+file . "lcd_controller_tb.vhdl" "6869a2115a3711336f3a2ccbc98180bb4d93abe8" "20200512062949.691":
+  entity lcd_controller_tb at 1( 0) + 0 on 573;
+  architecture log of lcd_controller_tb at 11( 196) + 0 on 574;
+file . "bdc_seven_tb.vhdl" "0a4cbb46cb87d14b1c926fa35952ec89b4c2fcbb" "20200608190817.750":
+  entity bdc_seven_tb at 1( 0) + 0 on 577;
+  architecture behavioral of bdc_seven_tb at 4( 45) + 0 on 578;
+file . "displays4.vhdl" "4c584b0b599e1b2a90c5c277f5b3b19ada807b9d" "20200609021109.878":
+  entity displays4 at 1( 0) + 0 on 581;
+  architecture behavioral of displays4 at 7( 163) + 0 on 582;
