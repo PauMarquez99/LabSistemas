@@ -19,4 +19,7 @@ architecture behavioral of displays4 is
   signal DECin, DECout: bit;
   signal seven: bit_vector(7 downto 1);
 
+  uut1: cont2 port map(clk, '1', '1', Qout, NQout);
+  uut2: bdc_seven port map('1', DECin, DECout, bdc, seven);
+
   
