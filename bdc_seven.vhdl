@@ -1,5 +1,5 @@
 entity bdc_seven is
-  port(EN, DEC: in bit; DECOUT: outbit;
+  port(EN, DEC: in bit; DECOUT: out bit;
   bdc: in bit_vector(3 downto 0); seven: out bit_vector(7 downto 1));
 end bdc_seven;
 
@@ -23,7 +23,7 @@ architecture behavioral of bdc_seven is
         DECOUT <= DEC;
       end case;
     elsif EN = '0' then
-      seven <= "0000000"
+      seven <= "0000000";
       DECOUT <= '0';
     end if;
   end process;

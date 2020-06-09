@@ -6,7 +6,7 @@ end displays4;
 
 architecture behavioral of displays4 is
   component bdc_seven
-    port(EN, DEC: in bit; DECOUT: outbit;
+    port(EN, DEC: in bit; DECOUT: out bit;
     bdc: in bit_vector(3 downto 0); seven: out bit_vector(7 downto 1));
   end component;
 
@@ -19,6 +19,7 @@ architecture behavioral of displays4 is
   signal DECin, DECout: bit;
   signal seven: bit_vector(7 downto 1);
 
+begin
   uut1: cont2 port map(clk, '1', '1', Qout, NQout);
   uut2: bdc_seven port map('1', DECin, DECout, bdc, seven);
 
@@ -111,4 +112,4 @@ begin
 end if;
 end process;
 
-end behavioral; 
+end behavioral;
