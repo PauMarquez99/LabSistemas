@@ -10,4 +10,4 @@ architecture behavioral of displays4 is
     bdc: in bit_vector(3 downto 0); seven: out bit_vector(7 downto 1));
   end component;
 
-  
+  component
