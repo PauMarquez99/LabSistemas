@@ -30,3 +30,27 @@ architecture behavioral of displays4 is
       bdc(1) <= A(1);
       bdc(2) <= A(2);
       bdc(3) <= A(3);
+
+    elsif Qout(0) = '1' and Qout(1) = '0' then
+      DECin <= DEC(1);
+      bdc(0) <= B(0);
+      bdc(1) <= B(1);
+      bdc(2) <= B(2);
+      bdc(3) <= B(3);
+
+    elsif Qout(0) = '0' and Qout(1) = '1' then
+      DECin <= DEC(2);
+      bdc(0) <= C(0);
+      bdc(1) <= C(1);
+      bdc(2) <= C(2);
+      bdc(3) <= C(3);
+
+    elsif Qout(0) = '1' and Qout(1) = '1' then
+      DECin <= DEC(3);
+      bdc(0) <= D(0);
+      bdc(1) <= D(1);
+      bdc(2) <= D(2);
+      bdc(3) <= D(3);
+
+  end if;
+end process;
