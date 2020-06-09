@@ -10,13 +10,13 @@ architecture behavioral of displays4_tb is
 
   signal CLK: bit;
   signal A, B, C, D, DEC: bit_vector(3 downto 0);
-  signal DIS0, DIS1, DIS2, DIS3: bit_vector(7 downto 0);
+  signal DIS0, DIS1, DIS2, DIS3: bit_vector(7 downto 1);
 
-  constant clk_period: time := 10ns;
+  constant clk_period: time := 10 ns ;
 
   begin
 
-  uut: displays4 port map(CLK, A, B, C, D, DIS0, DIS1, DIS2, DIS3);
+  uut: displays4 port map(CLK, A, B, C, D, DEC, DIS0, DIS1, DIS2, DIS3);
 
   clkprocess: process
   begin
@@ -26,20 +26,20 @@ architecture behavioral of displays4_tb is
     wait for clk_period/2;
   end process;
 
-  process:
+  process
   begin
     A <= "0001";
     B <= "0010";
     C <= "0100";
     D <= "1000";
     DEC <= "1000";
-    wait for 100ns;
+    wait for 100 ns ;
     A <= "0101";
     B <= "0110";
-    C <= "01110";
+    C <= "0111";
     D <= "1001";
     DEC <= "1000";
-    wait for 100ns;
+    wait for 100 ns ;
 end process;
 
 end behavioral;

@@ -1,4 +1,7 @@
 v 4
+file . "displays4_tb.vhdl" "41e60705ece7fd0b575f2033ca895829060cc545" "20200609022438.336":
+  entity displays4_tb at 1( 0) + 0 on 591;
+  architecture behavioral of displays4_tb at 4( 52) + 0 on 592;
 file . "cont2.vhdl" "ff72e4d4f434bd06cdb1f9710539085fd630281b" "20200609022034.811":
   entity cont2 at 1( 0) + 0 on 587;
   architecture behavioral of cont2 at 5( 96) + 0 on 588;
@@ -77,6 +80,6 @@ file . "lcd_controller_tb.vhdl" "6869a2115a3711336f3a2ccbc98180bb4d93abe8" "2020
 file . "bdc_seven_tb.vhdl" "0a4cbb46cb87d14b1c926fa35952ec89b4c2fcbb" "20200608190817.750":
   entity bdc_seven_tb at 1( 0) + 0 on 577;
   architecture behavioral of bdc_seven_tb at 4( 45) + 0 on 578;
-file . "displays4.vhdl" "4c584b0b599e1b2a90c5c277f5b3b19ada807b9d" "20200609021109.878":
-  entity displays4 at 1( 0) + 0 on 581;
-  architecture behavioral of displays4 at 7( 163) + 0 on 582;
+file . "displays4.vhdl" "4c584b0b599e1b2a90c5c277f5b3b19ada807b9d" "20200609022117.026":
+  entity displays4 at 1( 0) + 0 on 589;
+  architecture behavioral of displays4 at 7( 163) + 0 on 590;
