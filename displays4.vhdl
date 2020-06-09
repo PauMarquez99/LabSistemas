@@ -14,4 +14,9 @@ architecture behavioral of displays4 is
     port(clk, SN, RN: in bit; Q, NQ: out bit_vector(1 downto 0));
   end component;
 
+  signal Qout, NQout: bit_vector (1 downto 0);
+  signal bdc: bit_vector(3 downto 0);
+  signal DECin, DECout: bit;
+  signal seven: bit_vector(7 downto 1);
+
   
