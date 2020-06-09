@@ -22,4 +22,11 @@ architecture behavioral of displays4 is
   uut1: cont2 port map(clk, '1', '1', Qout, NQout);
   uut2: bdc_seven port map('1', DECin, DECout, bdc, seven);
 
-  
+  process(Qout)
+  begin
+    if Qout(0) = '0' and Qout(1) = '0' then
+      DECin <= DEC(0);
+      bdc(0) <= A(0);
+      bdc(1) <= A(1);
+      bdc(2) <= A(2);
+      bdc(3) <= A(3);
