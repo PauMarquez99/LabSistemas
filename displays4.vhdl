@@ -54,3 +54,61 @@ architecture behavioral of displays4 is
 
   end if;
 end process;
+
+process (Qout)
+begin
+  if Qout(0) = '0' and Qout(1) = '0' then
+    DIS0(1) <= seven(1);
+    DIS0(2) <= seven(2);
+    DIS0(3) <= seven(3);
+    DIS0(4) <= seven(4);
+    DIS0(5) <= seven(5);
+    DIS0(6) <= seven(6);
+    DIS0(7) <= seven(7);
+
+    DIS1 <= "0000000";
+    DIS2 <= "0000000";
+    DIS3 <= "0000000";
+
+  elsif Qout(0) = '1' and Qout(1) = '0' then
+    DIS1(1) <= seven(1);
+    DIS1(2) <= seven(2);
+    DIS1(3) <= seven(3);
+    DIS1(4) <= seven(4);
+    DIS1(5) <= seven(5);
+    DIS1(6) <= seven(6);
+    DIS1(7) <= seven(7);
+
+    DIS0 <= "0000000";
+    DIS2 <= "0000000";
+    DIS3 <= "0000000";
+
+  elsif Qout(0) = '0' and Qout(1) = '1' then
+    DIS2(1) <= seven(1);
+    DIS2(2) <= seven(2);
+    DIS2(3) <= seven(3);
+    DIS2(4) <= seven(4);
+    DIS2(5) <= seven(5);
+    DIS2(6) <= seven(6);
+    DIS2(7) <= seven(7);
+
+    DIS0 <= "0000000";
+    DIS1 <= "0000000";
+    DIS3 <= "0000000";
+
+  elsif Qout(0) = '1' and Qout(1) = '1' then
+    DIS3(1) <= seven(1);
+    DIS3(2) <= seven(2);
+    DIS3(3) <= seven(3);
+    DIS3(4) <= seven(4);
+    DIS3(5) <= seven(5);
+    DIS3(6) <= seven(6);
+    DIS3(7) <= seven(7);
+
+    DIS0 <= "0000000";
+    DIS1 <= "0000000";
+    DIS2 <= "0000000";
+end if;
+end process;
+
+end behavioral; 
