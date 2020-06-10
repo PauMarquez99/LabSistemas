@@ -15,6 +15,22 @@ architecture behavioural of DigitalClk is
   process(clk)
   begin
     if clk'event and clk = '1' then
+      elsif setH = '0' and setM = '1' and SsegH < "1100" then
+        SsegH <= SsegH +1;
+        SsegM <= "000000";
+
+      elsif setH = '0' and setM = '1' and SsegH = "1100" then
+        SsegH <= SsegH;
+        SsegM <= "000000";
+
+      elsif setH = '1' and setM = '0' and SsegH < "111011" then
+        SsegH <= "0000";
+        SsegM <= SsegM;
+
+      elsif setH = '1' and setM = '0' and SsegH = "111011" then
+        SsegH <= "0000";
+        SsegM <= "000000";
+
 
     end if;
   end process;
