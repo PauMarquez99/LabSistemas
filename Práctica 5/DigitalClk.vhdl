@@ -25,9 +25,13 @@ architecture behavioural of DigitalClk is
 
       elsif setH = '1' and setM = '0' and SsegH < "111011" then
         SsegH <= "0000";
-        SsegM <= SsegM;
+        SsegM <= SsegM+1;
 
       elsif setH = '1' and setM = '0' and SsegH = "111011" then
+        SsegH <= "0000";
+        SsegM <= SsegM;
+
+      elsif setH = '1' and setM = '1' then
         SsegH <= "0000";
         SsegM <= "000000";
 
