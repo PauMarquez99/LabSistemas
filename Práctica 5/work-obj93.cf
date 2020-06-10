@@ -1,7 +1,7 @@
 v 4
-file . "DigitalClk_tb.vhdl" "3a57d7eb79c4c3cb8c9d86e15c7b7f1e2a3ab9c1" "20200610152518.918":
-  entity digitalclk_tb at 1( 0) + 0 on 15;
-  architecture behavioural of digitalclk_tb at 8( 121) + 0 on 16;
-file . "DigitalClk.vhdl" "4e0df8df352df2add5a46cc85eb58a3cdfe1bbbd" "20200610152433.754":
-  entity digitalclk at 1( 0) + 0 on 13;
-  architecture behavioural of digitalclk at 10( 229) + 0 on 14;
+file . "DigitalClk.vhdl" "bf44c11ef5838cc8224f19081e62db0a50540015" "20200610170923.802":
+  entity digitalclk at 1( 0) + 0 on 71;
+  architecture behavioural of digitalclk at 12( 252) + 0 on 72;
+file . "DigitalClk_tb.vhdl" "8cc269a3aac03a977f987e726555ef11d008fa47" "20200610170929.756":
+  entity digitalclk_tb at 1( 0) + 0 on 73;
+  architecture behavioural of digitalclk_tb at 8( 121) + 0 on 74;

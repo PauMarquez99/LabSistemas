@@ -2,17 +2,20 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+--setM Minutes
+--setH Hours
 entity DigitalClk is
-  port(clk, setM, setH: in bit; segM: out unsigned(5 downto 0);
-  segH: out unsigned(3 downto 0); PM: out bit);
+  port(clk, setM, setH: in std_logic; segM: out unsigned(5 downto 0);
+  segH: out unsigned(3 downto 0));
 end DigitalClk;
 
 architecture behavioural of DigitalClk is
   signal SsegM: unsigned (5 downto 0);
   signal SsegH: unsigned (3 downto 0);
-  signal SPM: bit;
+
 
   begin
+
   process(clk)
   begin
     if clk'event and clk = '1' then
@@ -24,11 +27,11 @@ architecture behavioural of DigitalClk is
         SsegH <= SsegH;
         SsegM <= "000000";
 
-      elsif setH = '1' and setM = '0' and SsegH < "111011" then
+      elsif setH = '1' and setM = '0' and SsegM < "111011" then
         SsegH <= "0000";
         SsegM <= SsegM+1;
 
-      elsif setH = '1' and setM = '0' and SsegH = "111011" then
+      elsif setH = '1' and setM = '0' and SsegM = "111011" then
         SsegH <= "0000";
         SsegM <= SsegM;
 
@@ -51,13 +54,11 @@ architecture behavioural of DigitalClk is
       elsif SsegH = "1100" and SsegM = "111011" then
         SsegH <= "0000";
         SsegM <= "000000";
-        PM <= not SPM;
 
 
     end if;
   end process;
-
   segH <= SsegH;
   segM <= SsegM;
-  PM <= SPM;
+
 end behavioural;
