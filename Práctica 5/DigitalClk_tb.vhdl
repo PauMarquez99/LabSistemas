@@ -27,7 +27,7 @@ architecture behavioural of DigitalClk_tb is
     wait for 1 ns;
   end process;
 
-  ´process(clk)
+  process
   begin
   PM <= '0';
   wait for 10 ns;
@@ -37,4 +37,4 @@ architecture behavioural of DigitalClk_tb is
   wait for 150 ns;
 
   end process;
-end behavioural; 
+end behavioural;
