@@ -35,6 +35,23 @@ architecture behavioural of DigitalClk is
         SsegH <= "0000";
         SsegM <= "000000";
 
+      elsif SsegH < "1100" and SsegM = "111011" then
+        SsegH <= SsegH +1;
+        SsegM <= "000000";
+
+      elsif SsegH < "1100" and SsegM < "111011" then
+        SsegH <= SsegH;
+        SsegM <= SsegM+1;
+
+      elsif SsegH = "1100" and SsegM < "111011" then
+        SsegH <= SsegH;
+        SsegM <= SsegM+1;
+
+      elsif SsegH = "1100" and SsegM = "111011" then
+        SsegH <= "0000";
+        SsegM <= "000000";
+        PM <= not SPM;
+
 
     end if;
   end process;
