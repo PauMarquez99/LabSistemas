@@ -1,0 +1,4 @@
+v 4
+file . "DigitalClk.vhdl" "4e0df8df352df2add5a46cc85eb58a3cdfe1bbbd" "20200610151754.743":
+  entity digitalclk at 1( 0) + 0 on 11;
+  architecture behavioural of digitalclk at 10( 229) + 0 on 12;
