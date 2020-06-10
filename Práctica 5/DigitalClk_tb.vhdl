@@ -22,9 +22,19 @@ architecture behavioural of DigitalClk_tb is
   begin
     clk <= '1';
     wait for 1 ns;
+
     clk <= '0';
     wait for 1 ns;
   end process;
 
   ´process(clk)
   begin
+  PM <= '0';
+  wait for 10 ns;
+
+  setH <= '0';
+  setM <= '0';
+  wait for 150 ns;
+
+  end process;
+end behavioural; 
