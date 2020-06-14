@@ -1,7 +1,13 @@
 v 4
-file . "Contador74_tb.vhdl" "06097d6b4bab26b22405f223a8c019eef3041a30" "20200614180725.133":
-  entity contador74_tb at 1( 0) + 0 on 21;
-  architecture log of contador74_tb at 8( 114) + 0 on 22;
-file . "Contador74.vhdl" "345854696af08a0645a581be9e14e65d7d6f949f" "20200614180720.478":
-  entity contador74 at 1( 0) + 0 on 19;
-  architecture log of contador74 at 15( 295) + 0 on 20;
+file . "Contador99.vhdl" "620fd433812a3caf8a421fbc5902d67f55d6b2a2" "20200614213039.336":
+  entity contador99 at 1( 0) + 0 on 119;
+  architecture log of contador99 at 14( 324) + 0 on 120;
+file . "Contador74_tb.vhdl" "bece7298c86fe48fc6730f3570ad2476ac942dc1" "20200614210444.696":
+  entity contador74_tb at 1( 0) + 0 on 109;
+  architecture log of contador74_tb at 8( 114) + 0 on 110;
+file . "Contador74.vhdl" "5591a8b82d0348ebed9150a63144469d526c931d" "20200614210441.237":
+  entity contador74 at 1( 0) + 0 on 107;
+  architecture log of contador74 at 14( 313) + 0 on 108;
+file . "Contador99_tb.vhdl" "e581ad600dceb8a81097b29c4eb23cded3563f11" "20200614213041.719":
+  entity contador99_tb at 1( 0) + 0 on 121;
+  architecture log of contador99_tb at 8( 114) + 0 on 122;

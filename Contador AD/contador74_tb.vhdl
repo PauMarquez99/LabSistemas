@@ -7,22 +7,24 @@ end entity;
 
 architecture log of contador74_tb is
   component contador74
-    port(
+    port(en : in std_logic;
         clk : in std_logic;
         reset : in std_logic;
         up_down : in std_logic;
-        count_o : out std_logic_vector(7 downto 0);
+        count_o : out std_logic_vector(3 downto 0);
         end_o   : out std_logic
     );
   end component;
 
-  signal clk, reset, up_down: std_logic;
-  signal count_o: std_logic_vector(7 downto 0);
-  signal end_o: std_logic;
+  signal en, clk : std_logic;
+  signal reset : std_logic;
+  signal up_down : std_logic;
+  signal count_o : std_logic_vector(3 downto 0);
+  signal end_o   : std_logic;
 
   begin
 
-  uut: contador74 port map (clk, reset, up_down, count_o, end_o);
+  uut: contador74 port map (en, clk, reset, up_down, count_o, end_o);
 
   process
   begin
@@ -34,14 +36,9 @@ architecture log of contador74_tb is
 
   process
   begin
-    reset <= '0';
+    up_down <= '1';
+    wait for 50 ns;
     up_down <= '0';
-    wait for 50 ns;
-    reset <= '0';
-    up_down <= '1';
-    wait for 50 ns;
-    reset <= '1';
-    up_down <= '1';
-    wait for 5 ns;
+    wait for 20 ns;
   end process;
 end log;
