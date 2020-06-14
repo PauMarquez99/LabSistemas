@@ -18,9 +18,11 @@ architecture log of shift8 is
     );
   end component;
 
-  begin
-    uut1: shiftregister port map(clk, clr, sdr, sdl, mode, parallel(7 downto 4), q(7 downto 4));
-    uut2: shiftregister port map(clk, clr, sdr, sdl, mode, parallel (3 downto 0), q(3 downto 0));
+  signal q_replace: std_logic_vector(7 downto 0);
 
+  begin
+    uut1: shiftregister port map(clk, clr, q_replace(3), sdl, mode, parallel(7 downto 4), q_replace(7 downto 4));
+    uut2: shiftregister port map(clk, clr, sdr, q_replace(4), mode, parallel (3 downto 0), q_replace(3 downto 0));
+    q <= q_replace;
 
 end log;
