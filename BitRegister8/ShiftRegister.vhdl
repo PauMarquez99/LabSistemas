@@ -1,17 +1,17 @@
 library ieee;
-use ieee.std_logic_1164.all;
+use ieee.numeric_bit.all;
 
 entity shiftregister is
     port(
-        clk, clr, sdr, sdl : in std_logic;
-        mode : in std_logic_vector(1 downto 0);
-        parallel : in std_logic_vector(3 downto 0);
-        q : out std_logic_vector(3 downto 0)
+        clk, clr, sdr, sdl : in bit;
+        mode : in bit_vector(1 downto 0);
+        parallel : in bit_vector(3 downto 0);
+        q : out bit_vector(3 downto 0)
     );
 end entity;
 
 architecture arch of shiftregister is
-    signal qn : std_logic_vector(3 downto 0) := "0000";
+    signal qn : bit_vector(3 downto 0) := "0000";
 begin
     process(clr, clk)
     begin
@@ -35,6 +35,4 @@ begin
             end if;
         end if;
     end process;
-
-    q <= qn;
 end arch ; -- arch
