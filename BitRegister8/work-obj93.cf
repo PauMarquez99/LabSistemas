@@ -1,10 +1,10 @@
 v 4
-file . "Shift8_tb.vhdl" "b33fbdebd3228ec5a10cd64162f80f1a791489b3" "20200614073208.079":
-  entity shift8_tb at 1( 0) + 0 on 95;
-  architecture log of shift8_tb at 7( 80) + 0 on 96;
-file . "ShiftRegister.vhdl" "20e5a40ceca528da78e68522aec45faeca3da2c8" "20200614073202.756":
-  entity shiftregister at 1( 0) + 0 on 91;
-  architecture arch of shiftregister at 13( 271) + 0 on 92;
-file . "Shift8.vhdl" "1c125dafdf6adf0119b046f9d9c89ca49f8d07cf" "20200614073205.436":
-  entity shift8 at 1( 0) + 0 on 93;
-  architecture log of shift8 at 11( 238) + 0 on 94;
+file . "Shift8.vhdl" "1c125dafdf6adf0119b046f9d9c89ca49f8d07cf" "20200614073847.543":
+  entity shift8 at 1( 0) + 0 on 99;
+  architecture log of shift8 at 11( 238) + 0 on 100;
+file . "ShiftRegister.vhdl" "f03e428361454de9ebf8e91a00de093a31ee8b88" "20200614073830.955":
+  entity shiftregister at 1( 0) + 0 on 97;
+  architecture arch of shiftregister at 13( 271) + 0 on 98;
+file . "Shift8_tb.vhdl" "9b9b17b1a3f565b67ca848af5cb121f08500d403" "20200614073911.935":
+  entity shift8_tb at 1( 0) + 0 on 101;
+  architecture log of shift8_tb at 7( 80) + 0 on 102;
