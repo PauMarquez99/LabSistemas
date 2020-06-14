@@ -6,7 +6,7 @@ entity substractor4 is
         a, b:in std_logic_vector(3 downto 0);
         bin : in std_logic;
         d: out std_logic_vector (3 downto 0);
-        bout : out std_logic;
+        bout : out std_logic
     );
 end entity;
 
