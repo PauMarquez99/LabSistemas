@@ -1,0 +1,7 @@
+v 4
+file . "Contador74_tb.vhdl" "06097d6b4bab26b22405f223a8c019eef3041a30" "20200614180725.133":
+  entity contador74_tb at 1( 0) + 0 on 21;
+  architecture log of contador74_tb at 8( 114) + 0 on 22;
+file . "Contador74.vhdl" "345854696af08a0645a581be9e14e65d7d6f949f" "20200614180720.478":
+  entity contador74 at 1( 0) + 0 on 19;
+  architecture log of contador74 at 15( 295) + 0 on 20;
