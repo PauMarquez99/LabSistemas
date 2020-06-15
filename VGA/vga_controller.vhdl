@@ -58,42 +58,33 @@ begin
 
         -- h_sync
         if h_count < h_display + h_fp or h_count >= h_display + h_fp + h_pulse then
+          h_sync <= not h_pol;
+        else
           h_sync <= h_pol;
+        end if;
 
         -- Vertical
-        if v_count >= "1000001100" and h_count <= "1010111011" then
-            v_count <= "0000000000";
+        if v_count < v_display + v_fp or v_count >= v_display + v_fp + v_pulse then
+          v_sync <= not v_pol;
         else
-            v_count <= v_count + 1;
+          v_sync <= v_pol;
         end if;
 
-        -- TinyVGA
-        -- v_sync   494                             493
-        if v_count <= "0111101110" and v_count >= "0111101101" then
-            vs <= '0';
+        --coordenadas a utilizar
+        if h_count < h_display then
+          column <= h_count;
+        end if;
+
+        if v_count < v_display then
+          row <= v_count;
+        end if;
+
+        if h_count < h_display and v_count < v_display then
+          enable <= '1';
         else
-            vs <= '1';
+          enable <= '0';
         end if;
 
-        if h_count <= "1001111111" then -- 639
-            video_on_h <= '1';
-        else
-            video_on_h <= '0';
-        end if;
-
-        if v_count <= "0111011111" then --479
-            video_on_v <= '1';
-        else
-            video_on_v <= '0';
-        end if;
-
-        rgb(0) <= red and video_on;
-        rgb(1) <= green and video_on;
-        rgb(2) <= blue and video_on;
-
-        h_sync <= hs;
-        v_sync <= vs;
-        end if;
     end process;
 
 end arch;
