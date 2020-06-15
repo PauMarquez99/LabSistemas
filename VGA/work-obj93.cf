@@ -5,3 +5,6 @@ file . "vga_controller.vhdl" "3d311488a331a158dc899530e91bf54abbf74b6d" "2020061
 file . "vga.vhdl" "7ccf6b5467eca6479b8d09944662f39b82ec9ed6" "20200615172137.039":
   entity vga at 1( 0) + 0 on 13;
   architecture arch of vga at 16( 327) + 0 on 14;
+file . "vga_controller_tb.vhdl" "01c3195aa691c560ab1c9fb63f3314c69492bd60" "20200615174933.058":
+  entity vga_controller_tb at 1( 0) + 0 on 23;
+  architecture arch of vga_controller_tb at 19( 620) + 0 on 24;
