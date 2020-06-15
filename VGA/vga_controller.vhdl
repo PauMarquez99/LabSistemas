@@ -41,7 +41,7 @@ begin
 
     process
     begin
-        wait for clk'event and clk ='1'
+        wait until clk'event and clk ='1'
 
         -- Horizontal
         if h_count < h_period - 1 then
@@ -50,9 +50,9 @@ begin
           h_count <= 0;
 
           if v_count < v_period - 1 then
-            v_period <= v_period + 1;
+            v_count <= v_count + 1;
           else
-            v_period <= 0;
+            v_count <= 0;
           end if;
         end if;
 
