@@ -27,10 +27,10 @@ entity vga_controller is
 end entity;
 
 -- 640x480
-architecture arch of vga is
+architecture arch of vga_controller is
 
-    constant h_period : integer := h_pulse + h_pb + h_display + h_fp;
-    constant v_period : integer := v_pulse + v_pb + v_display + v_fp;
+    constant h_period : integer := h_pulse + h_bp + h_display + h_fp;
+    constant v_period : integer := v_pulse + v_bp + v_display + v_fp;
 
     signal h_count : integer range 0 to h_period - 1 := 0;
     signal v_count : integer range 0 to v_period - 1 := 0;
