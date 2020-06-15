@@ -28,7 +28,7 @@ begin
 
     process
     begin
-        if clk'event and clk ='1' then
+        wait until clk'event and clk ='1' then
 
         -- Horizontal
         if hcount = "1100011111" then --799
