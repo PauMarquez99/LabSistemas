@@ -1,4 +1,7 @@
 v 4
+file . "OutputRegister_tb.vhdl" "f8d8de63df617b747d92d897636e08c938f12547" "20200615035247.734":
+  entity outputregister_tb at 1( 0) + 0 on 41;
+  architecture log of outputregister_tb at 7( 91) + 0 on 42;
 file . "Datapath_tb.vhdl" "045bb32c92308a585aae667c6b3237f46037a04d" "20200614154259.407":
   entity datapath_tb at 1( 0) + 0 on 33;
   architecture log of datapath_tb at 7( 85) + 0 on 34;
@@ -26,3 +29,6 @@ file . "datapath.vhdl" "740c3ced8608de5014f0ce5dfa18e51656b774f3" "2020061415374
 file . "Controller.vhdl" "9994f9545693f8e86195d8d4f2780dd371f9f35c" "20200615023904.512":
   entity controller at 1( 0) + 0 on 37;
   architecture log of controller at 14( 307) + 0 on 38;
+file . "OutputRegister.vhdl" "3f9935ddeadfc3c3d8e86f16ec483a8c2ede342d" "20200615034601.904":
+  entity outputregister at 1( 0) + 0 on 39;
+  architecture log of outputregister at 11( 219) + 0 on 40;
