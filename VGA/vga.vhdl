@@ -28,13 +28,15 @@ begin
 
     process
     begin
-        wait for clk'event and clk ='1';
+        if clk'event and clk ='1' then
+
         -- Horizontal
         if hcount = "1100011111" then --799
             hcount <= "0000000000";
         else
             hcount <= hcount +1 ;
         end if;
+
         -- h_sync
         if hcount >= "1010010011" and hcount <= "1011110011" then
             hs <= '0';
@@ -48,6 +50,7 @@ begin
         else
             vcount <= vcount + 1;
         end if;
+
         -- TinyVGA
         -- v_sync   494                             493
         if vcount <= "0111101110" and vcount >= "0111101101" then
@@ -70,10 +73,11 @@ begin
 
         rgb(0) <= red and video_on;
         rgb(1) <= green and video_on;
-        rgb(2) <= azul and video_on;
+        rgb(2) <= blue and video_on;
 
         h_sync <= hs;
         v_sync <= vs;
+        end if;
     end process;
 
 end arch;
