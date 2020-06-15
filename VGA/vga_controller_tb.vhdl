@@ -52,7 +52,7 @@ end component;
 
       uut1: vga_controller
             generic map (h_pulse, h_bp, h_display, h_fp, h_pol,
-                        v_pulse, v_bp, v_display, v_fp, v_pol)
+                         v_pulse, v_bp, v_display, v_fp, v_pol)
             port map (clk, enable, column, row, h_sync, v_sync, clk_vga);
 
       process
