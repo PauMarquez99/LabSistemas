@@ -5,27 +5,27 @@ file . "OutputRegister_tb.vhdl" "f8d8de63df617b747d92d897636e08c938f12547" "2020
 file . "Datapath_tb.vhdl" "045bb32c92308a585aae667c6b3237f46037a04d" "20200614154259.407":
   entity datapath_tb at 1( 0) + 0 on 33;
   architecture log of datapath_tb at 7( 85) + 0 on 34;
-file . "substractor4.vhdl" "f956ed73c231e877ff45ad80ed1872cf65d50ea0" "20200614152531.633":
-  entity substractor4 at 1( 0) + 0 on 25;
-  architecture arch of substractor4 at 13( 259) + 0 on 26;
-file . "mux1bit.vhdl" "80ee04a59cc8b6bc8ad66a800a56196af11305f5" "20200614152440.355":
-  entity mux1bit at 1( 0) + 0 on 21;
-  architecture arch of mux1bit at 11( 190) + 0 on 22;
-file . "comparator.vhdl" "31eefdd4a6c02d5e9f83cc91a537bb80ab247c0a" "20200614152427.197":
-  entity comparator at 1( 0) + 0 on 19;
-  architecture arch of comparator at 11( 200) + 0 on 20;
-file . "substractor.vhdl" "c41b324aebef03aa6a7d572d30c173aa139bf9ae" "20200614152414.415":
-  entity substractor at 1( 0) + 0 on 17;
-  architecture arch of substractor at 11( 175) + 0 on 18;
-file . "mux.vhdl" "c0be272fe5ae1985cf1de81a0d63d0170416793a" "20200614152452.920":
-  entity mux at 1( 0) + 0 on 23;
-  architecture arch of mux at 12( 222) + 0 on 24;
+file . "substractor4.vhdl" "f956ed73c231e877ff45ad80ed1872cf65d50ea0" "20200615040020.803":
+  entity substractor4 at 1( 0) + 0 on 51;
+  architecture arch of substractor4 at 13( 259) + 0 on 52;
+file . "mux1bit.vhdl" "80ee04a59cc8b6bc8ad66a800a56196af11305f5" "20200615035847.361":
+  entity mux1bit at 1( 0) + 0 on 43;
+  architecture arch of mux1bit at 11( 190) + 0 on 44;
+file . "comparator.vhdl" "31eefdd4a6c02d5e9f83cc91a537bb80ab247c0a" "20200615035918.329":
+  entity comparator at 1( 0) + 0 on 47;
+  architecture arch of comparator at 11( 200) + 0 on 48;
+file . "substractor.vhdl" "c41b324aebef03aa6a7d572d30c173aa139bf9ae" "20200615035947.205":
+  entity substractor at 1( 0) + 0 on 49;
+  architecture arch of substractor at 11( 175) + 0 on 50;
+file . "mux.vhdl" "c0be272fe5ae1985cf1de81a0d63d0170416793a" "20200615035859.096":
+  entity mux at 1( 0) + 0 on 45;
+  architecture arch of mux at 12( 222) + 0 on 46;
 file . "shiftregister.vhdl" "ebf5dd85f7d1f93ff5c07d86323fc02de332075a" "20200614153345.241":
   entity shiftregister at 1( 0) + 0 on 29;
   architecture arch of shiftregister at 13( 298) + 0 on 30;
-file . "datapath.vhdl" "740c3ced8608de5014f0ce5dfa18e51656b774f3" "20200614153749.118":
-  entity datapath at 1( 0) + 0 on 31;
-  architecture log of datapath at 15( 486) + 0 on 32;
+file . "datapath.vhdl" "bc8a9943cddd671d581fe530cbad3b32c771f9f1" "20200615040044.857":
+  entity datapath at 1( 0) + 0 on 53;
+  architecture log of datapath at 15( 486) + 0 on 54;
 file . "Controller.vhdl" "9994f9545693f8e86195d8d4f2780dd371f9f35c" "20200615023904.512":
   entity controller at 1( 0) + 0 on 37;
   architecture log of controller at 14( 307) + 0 on 38;
