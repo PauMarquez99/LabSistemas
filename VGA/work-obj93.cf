@@ -1,4 +1,4 @@
 v 4
-file . "vga.vhdl" "4254a7bede85737c4cf08ff84d0574ba67ec6c8c" "20200615164541.164":
-  entity vga at 1( 0) + 0 on 11;
-  architecture arch of vga at 16( 327) + 0 on 12;
+file . "vga.vhdl" "7ccf6b5467eca6479b8d09944662f39b82ec9ed6" "20200615172137.039":
+  entity vga at 1( 0) + 0 on 13;
+  architecture arch of vga at 16( 327) + 0 on 14;

@@ -28,7 +28,7 @@ begin
 
     process
     begin
-        wait until clk'event and clk ='1' then
+        wait until clk'event and clk ='1';
 
         -- Horizontal
         if hcount = "1100011111" then --799
@@ -77,7 +77,6 @@ begin
 
         h_sync <= hs;
         v_sync <= vs;
-        end if;
     end process;
 
 end arch;

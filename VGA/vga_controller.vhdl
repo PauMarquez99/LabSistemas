@@ -13,7 +13,7 @@ entity vga_controller is
         v_bp      : integer := 33;
         v_display : integer := 480;
         v_fp      : integer := 10;
-        v_pol     : std_logic := '0';
+        v_pol     : std_logic := '0'
     );
 
     port(
@@ -41,7 +41,7 @@ begin
 
     process
     begin
-        wait until clk'event and clk ='1'
+        wait until clk'event and clk ='1';
 
         -- Horizontal
         if h_count < h_period - 1 then
