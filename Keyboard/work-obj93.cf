@@ -1,7 +1,13 @@
 v 4
+file . "keyboard.vhdl" "981c3c54dd6aa84e80f7d75fc58a6baec6bd979f" "20200616051825.441":
+  entity keyboard at 1( 0) + 0 on 25;
+  architecture arch of keyboard at 15( 308) + 0 on 26;
 file . "keyboard_tb.vhdl" "bc6de616ec8c50f54c7522aa7ab13c0b94ccc87d" "20200615221606.471":
   entity keyboard_tb at 1( 0) + 0 on 13;
   architecture arch of keyboard_tb at 15( 326) + 0 on 14;
-file . "keyboard2.vhdl" "24034244f8c28231f727658f493f1e4845ff4ef9" "20200616045011.344":
-  entity keyboard2 at 1( 0) + 0 on 17;
-  architecture arch of keyboard2 at 16( 397) + 0 on 18;
+file . "keyboard2.vhdl" "24034244f8c28231f727658f493f1e4845ff4ef9" "20200616052131.442":
+  entity keyboard2 at 1( 0) + 0 on 29;
+  architecture arch of keyboard2 at 16( 397) + 0 on 30;
+file . "keyboard2_tb.vhdl" "13eb911270e2f72bed10ad9a663b0da36bd47ca3" "20200616054029.896":
+  entity keyboard2_tb at 1( 0) + 0 on 33;
+  architecture arch of keyboard2_tb at 15( 331) + 0 on 34;
