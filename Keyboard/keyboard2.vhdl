@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 
-entity keyboard is
+entity keyboard2 is
     port(
         kbd_clk, kbd_data, clk  : in std_logic;
         reset, enable           : in std_logic;
@@ -13,7 +13,7 @@ entity keyboard is
     );
 end entity;
 
-architecture arch of keyboard is
+architecture arch of keyboard2 is
 
     type state is (state_wait, state_run);
 
