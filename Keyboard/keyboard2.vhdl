@@ -15,7 +15,7 @@ end entity;
 
 architecture arch of keyboard is
 
-    type state is (state_state_wait, state_state_run);
+    type state is (state_wait, state_run);
 
     signal filter           : std_logic_vector(7 downto 0) := "00000000";
     signal kbd_clk_filtered : std_logic := '0';
@@ -59,7 +59,7 @@ begin
                       end if;
 
                   when state_run =>
-                      if incount <= "1001";
+                      if incount <= "1001" then
                           shiftin(7 downto 0) <= shiftin (8 downto 1);
                           shiftin(8) <= kbd_data;
                           ready_set <= '0';
@@ -72,7 +72,7 @@ begin
                           ready_set <= '1';
                           incount <= "0000";
                           current_state <= state_wait;
-                      end if
+                      end if;
 
                   when others => null;
                 end case;
